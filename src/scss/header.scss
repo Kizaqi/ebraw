@@ -1,0 +1,84 @@
+.header {
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  &__top {
+    justify-content: space-between;
+    .form {
+      border: 1.5px solid #023047;
+      border-radius: 5px;
+      color: $color-sec;
+      .search-item {
+        width: 100%;
+        padding: 15px;
+      }
+
+      button {
+        color: #fff;
+        background: $color-bg;
+        padding: 0 30px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 19px;
+      }
+      select {
+        cursor: pointer;
+        text-align: end;
+        color: $color-sec;
+        background: #fff;
+      }
+    }
+    .item {
+      a {
+        color: $color-bg;
+        transition: 0.3s color ease;
+        &:hover {
+          color: $color-sec;
+          transition: 0.3s color ease;
+        }
+      }
+    }
+  }
+}
+.main {
+  padding: 15px 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    a {
+      position: relative;
+      padding: 10px;
+      color: $color-first;
+      transition: 0.3s all ease;
+      &:hover {
+        &::after {
+          opacity: 1;
+          transition: 0.3s all ease;
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0;
+        border-bottom: 1px solid $color-first;
+      }
+    }
+  }
+  .view {
+    a {
+      color: $color-bg;
+      transition: 0.3s color ease;
+      font-weight: 700;
+      &:hover {
+        color: $color-sec;
+      }
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+}

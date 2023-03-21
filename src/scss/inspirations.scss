@@ -1,0 +1,87 @@
+.inspirations {
+  position: relative;
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(2, 48, 71, 0.7);
+      z-index: 1;
+    }
+  }
+  .bg-blue {
+    background: $color-bg;
+  }
+  .bg-img {
+    background: url(../img/Inspirations/collection-right.jpg) no-repeat;
+    background-size: cover;
+  }
+  .owl-carousel {
+    position: relative;
+    padding: 53px 0;
+    z-index: 2;
+  }
+  .navs {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+
+    .previous {
+      border: 1px solid white;
+      padding: 15px;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      left: 5%;
+      transition: 0.3s all ease;
+      &:hover {
+        color: $color-bg;
+        background: white;
+      }
+    }
+    .next {
+      position: absolute;
+      border: 1px solid white;
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      right: 5%;
+      transition: 0.3s all ease;
+      &:hover {
+        color: $color-bg;
+        background: white;
+      }
+    }
+  }
+  .item {
+    color: #9cdeff;
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      span {
+        color: white;
+      }
+    }
+    p {
+      color: white;
+    }
+    a {
+      padding: 15px 31px;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s all ease;
+      &:hover {
+        color: $color-bg;
+        background: white;
+      }
+    }
+  }
+}
