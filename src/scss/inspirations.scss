@@ -40,7 +40,7 @@
       color: white;
       font-size: 20px;
       position: absolute;
-      left: 5%;
+      left: 3%;
       transition: 0.3s all ease;
       &:hover {
         color: $color-bg;
@@ -53,7 +53,7 @@
       color: white;
       font-size: 20px;
       padding: 15px;
-      right: 5%;
+      right: 3%;
       transition: 0.3s all ease;
       &:hover {
         color: $color-bg;
@@ -62,6 +62,9 @@
     }
   }
   .item {
+    .container {
+      padding: 0 100px;
+    }
     color: #9cdeff;
     h1 {
       font-weight: 700;

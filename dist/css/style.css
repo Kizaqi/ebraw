@@ -256,7 +256,7 @@ h6 {
   color: white;
   font-size: 20px;
   position: absolute;
-  left: 5%;
+  left: 3%;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -273,7 +273,7 @@ h6 {
   color: white;
   font-size: 20px;
   padding: 15px;
-  right: 5%;
+  right: 3%;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
@@ -286,6 +286,10 @@ h6 {
 
 .inspirations .item {
   color: #9cdeff;
+}
+
+.inspirations .item .container {
+  padding: 0 100px;
 }
 
 .inspirations .item h1 {
@@ -313,6 +317,59 @@ h6 {
 .inspirations .item a:hover {
   color: #023047;
   background: white;
+}
+
+.info {
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+
+.info .item {
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+.info .item .title {
+  padding-left: 14px;
+}
+
+.info .item .title h4 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333333;
+}
+
+.info .item .title p {
+  margin: 0;
+  color: #666666;
+}
+
+.info .item i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background: aqua;
+  text-align: center;
+  border-radius: 50%;
+  color: #666666;
+  background: #e5e5e5;
+}
+
+.info .item:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5sec ease all;
+  -o-transition: 0.5sec ease all;
+  transition: 0.5sec ease all;
+  border: 1px solid #023047;
+}
+
+.info .item:hover i {
+  background: #023047;
+  color: #fff;
+}
+
+.info .item:hover h4 {
+  color: #333333;
 }
 
 @media (max-width: 576px) {
