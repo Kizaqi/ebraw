@@ -1,0 +1,44 @@
+.social {
+  padding: 89px 0 100px;
+  background: #f3f3f3;
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .item {
+    position: relative;
+    margin-top: 46px;
+    i {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &::before {
+      content: '';
+      background: #000;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+    }
+    &:hover {
+      transform: scale(1.2);
+      position: relative;
+      z-index: 10;
+      transition: all 0.3s ease;
+      border: 21px solid #dfe2dd;
+      &::before {
+        opacity: 0.75;
+      }
+      i {
+        color: white;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

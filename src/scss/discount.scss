@@ -1,0 +1,41 @@
+.discount {
+  position: relative;
+  background-image: url(../img/discount-BG.jpg);
+  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  &::before {
+    content: '';
+    background: #000000;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .item {
+    max-width: 970px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 25px;
+    position: relative;
+    z-index: 5;
+    background: #e6f7ff;
+    p {
+      padding: 0 10px;
+      font-size: 24px;
+      &:nth-child(3) {
+        font-size: 18px;
+      }
+    }
+    a {
+      padding: 15px 30px;
+      border: 1px dashed #023047;
+    }
+  }
+}

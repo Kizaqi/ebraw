@@ -50,5 +50,32 @@ $('.next').click(function () {
 $('.previous').click(function () {
   owl.trigger('prev.owl.carousel');
 });
+$('.block').owlCarousel({
+  loop: true,
+  dots: true,
+  margin: 10,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+
+$('.next').click(function () {
+  owl.trigger('next.owl.carousel');
+});
+
+$('.previous').click(function () {
+  owl.trigger('prev.owl.carousel');
+});
 
 burgerMenu('.burger-menu');
