@@ -39,17 +39,6 @@ $('.owl-carousel').owlCarousel({
     },
   },
 });
-
-var owl = $('.owl-carousel');
-owl.owlCarousel();
-
-$('.next').click(function () {
-  owl.trigger('next.owl.carousel');
-});
-
-$('.previous').click(function () {
-  owl.trigger('prev.owl.carousel');
-});
 $('.block').owlCarousel({
   loop: true,
   dots: true,
@@ -67,15 +56,16 @@ $('.block').owlCarousel({
     },
   },
 });
-var owl = $('.owl-carousel');
-owl.owlCarousel();
-
-$('.next').click(function () {
-  owl.trigger('next.owl.carousel');
-});
-
-$('.previous').click(function () {
-  owl.trigger('prev.owl.carousel');
-});
 
 burgerMenu('.burger-menu');
+
+function carousel(selector, button) {
+  $(button + ' .next').click(function () {
+    $(selector).trigger('next.owl.carousel');
+  });
+  $(button + ' .previous').click(function () {
+    $(selector).trigger('prev.owl.carousel');
+  });
+}
+carousel('.slider-one', '.inspirations');
+carousel('.slider-two', '.customer');

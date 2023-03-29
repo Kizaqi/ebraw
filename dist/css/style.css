@@ -829,6 +829,7 @@ h6 {
 .social .item {
   position: relative;
   margin-top: 46px;
+  border: 21px solid transparent;
 }
 
 .social .item i {
@@ -848,6 +849,9 @@ h6 {
   left: 0;
   width: 100%;
   opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social .item:hover {
@@ -872,6 +876,53 @@ h6 {
   visibility: visible;
 }
 
+section .text-box {
+  margin: 0 20px;
+  padding: 20px;
+  min-height: 350px;
+}
+
+section .text-box.left {
+  background: url(../img/subscribe/left.jpg) no-repeat;
+  background-size: cover;
+}
+
+section .text-box.left p {
+  padding-top: 15%;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+section .text-box.left p span {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82px;
+}
+
+section .text-box.right {
+  background: url(../img/subscribe/right.jpg) no-repeat;
+  background-size: cover;
+}
+
+section .text-box.right p {
+  color: white;
+}
+
+section .text-box.right button {
+  font-size: 14px;
+  color: white;
+  background: #333333;
+}
+
+section .text-box h3 {
+  padding-top: 15%;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+}
+
 @media (max-width: 576px) {
   .header .burger-menu_nav {
     max-width: unset;
@@ -885,3 +936,7 @@ h6 {
 .webp .fashion .item-right { background: url(../img/fashion/right-img.webp) no-repeat; }
 
 .webp .discount { background-image: url(../img/discount-BG.webp); }
+
+.webp section .text-box.left { background: url(../img/subscribe/left.webp) no-repeat; }
+
+.webp section .text-box.right { background: url(../img/subscribe/right.webp) no-repeat; }

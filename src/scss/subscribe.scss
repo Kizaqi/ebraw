@@ -1,0 +1,43 @@
+section {
+  .text-box {
+    margin: 0 20px;
+    padding: 20px;
+    min-height: 350px;
+    &.left {
+      background: url(../img/subscribe/left.jpg) no-repeat;
+      background-size: cover;
+
+      p {
+        padding-top: 15%;
+        color: white;
+        font-weight: 500;
+        font-size: 30px;
+        span {
+          font-weight: 700;
+          font-size: 72px;
+          line-height: 82px;
+        }
+      }
+    }
+    &.right {
+      background: url(../img/subscribe/right.jpg) no-repeat;
+      background-size: cover;
+      p {
+        color: white;
+      }
+
+      button {
+        font-size: 14px;
+        color: white;
+        background: $color-first;
+      }
+    }
+    h3 {
+      padding-top: 15%;
+      color: white;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 43px;
+    }
+  }
+}
