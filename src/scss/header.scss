@@ -42,9 +42,30 @@
 .main {
   padding: 15px 0;
 
+  .humburger-item {
+    span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 6px 3px;
+      background: #023047;
+      &:nth-child(2) {
+        width: 20px;
+      }
+    }
+  }
+  .navigation {
+    opacity: 0;
+  }
+  .active {
+    opacity: 1;
+    transition: 0.7s all ease;
+  }
+
   ul {
     margin: 0;
     padding: 0;
+
     a {
       position: relative;
       padding: 10px;

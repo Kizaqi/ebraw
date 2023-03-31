@@ -1,6 +1,7 @@
 .blog {
   padding: 100px 0;
   background: #f3f3f3;
+  overflow: hidden;
 
   h4 {
     font-weight: 500;
@@ -16,6 +17,9 @@
     position: relative;
     margin-top: 46px;
     color: $color-first;
+    img {
+      width: 100%;
+    }
 
     &::before {
       content: '';
@@ -49,9 +53,9 @@
         color: white;
         top: 30%;
         left: 25%;
-        max-width: 265px;
-        width: 100%;
-        margin: 0 auto;
+        p {
+          max-width: 200px;
+        }
       }
       font-weight: 500;
       line-height: 20px;
@@ -63,6 +67,7 @@
       }
     }
     .buttns {
+      margin-top: 50px;
       transition: all 0.3s all;
       visibility: hidden;
       opacity: 0;

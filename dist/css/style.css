@@ -174,6 +174,29 @@ h6 {
   padding: 15px 0;
 }
 
+.main .humburger-item span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 6px 3px;
+  background: #023047;
+}
+
+.main .humburger-item span:nth-child(2) {
+  width: 20px;
+}
+
+.main .navigation {
+  opacity: 0;
+}
+
+.main .active {
+  opacity: 1;
+  -webkit-transition: 0.7s all ease;
+  -o-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
 .main ul {
   margin: 0;
   padding: 0;
@@ -590,6 +613,7 @@ h6 {
 .blog {
   padding: 100px 0;
   background: #f3f3f3;
+  overflow: hidden;
 }
 
 .blog h4 {
@@ -610,6 +634,10 @@ h6 {
   position: relative;
   margin-top: 46px;
   color: #333333;
+}
+
+.blog .item img {
+  width: 100%;
 }
 
 .blog .item::before {
@@ -657,9 +685,10 @@ h6 {
   color: white;
   top: 30%;
   left: 25%;
-  max-width: 265px;
-  width: 100%;
-  margin: 0 auto;
+}
+
+.blog .item .name.on-hover p {
+  max-width: 200px;
 }
 
 .blog .item .name span {
@@ -671,6 +700,7 @@ h6 {
 }
 
 .blog .item .buttns {
+  margin-top: 50px;
   -webkit-transition: all 0.3s all;
   -o-transition: all 0.3s all;
   transition: all 0.3s all;
@@ -880,48 +910,52 @@ h6 {
   visibility: visible;
 }
 
-section .text-box {
+.subscribe {
+  overflow: hidden;
+}
+
+.subscribe section .text-box {
   margin: 0 20px;
   padding: 20px;
   min-height: 350px;
 }
 
-section .text-box.left {
+.subscribe section .text-box.left {
   background: url(../img/subscribe/left.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-section .text-box.left p {
+.subscribe section .text-box.left p {
   padding-top: 15%;
   color: white;
   font-weight: 500;
   font-size: 30px;
 }
 
-section .text-box.left p span {
+.subscribe section .text-box.left p span {
   font-weight: 700;
   font-size: 72px;
   line-height: 82px;
 }
 
-section .text-box.right {
+.subscribe section .text-box.right {
   background: url(../img/subscribe/right.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-section .text-box.right p {
+.subscribe section .text-box.right p {
   color: white;
 }
 
-section .text-box.right button {
+.subscribe section .text-box.right button {
   font-size: 14px;
   color: white;
   background: #333333;
 }
 
-section .text-box h3 {
+.subscribe section .text-box h3 {
   padding-top: 15%;
   color: white;
   font-weight: 500;
@@ -935,6 +969,14 @@ section .text-box h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .products {
+    padding: 50px 0;
+  }
+
+  .customer {
+    padding: 50px 0;
   }
 
   .customer .navs {
@@ -954,6 +996,18 @@ section .text-box h3 {
     margin: 20px 0;
   }
 
+  .main .active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
+  .main .active li {
+    margin: 20px;
+  }
+
   .products .content {
     max-width: 320px;
   }
@@ -971,6 +1025,15 @@ section .text-box h3 {
   .products__main .item img {
     width: unset;
   }
+
+  .subscribe .text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .subscribe .text .right {
+    margin-top: 10px;
+  }
 }
 
 .webp .inspirations .bg-img { background: url(../img/Inspirations/collection-right.webp) no-repeat; }
@@ -981,6 +1044,6 @@ section .text-box h3 {
 
 .webp .discount { background-image: url(../img/discount-BG.webp); }
 
-.webp section .text-box.left { background: url(../img/subscribe/left.webp) no-repeat; }
+.webp .subscribe section .text-box.left { background: url(../img/subscribe/left.webp) no-repeat; }
 
-.webp section .text-box.right { background: url(../img/subscribe/right.webp) no-repeat; }
+.webp .subscribe section .text-box.right { background: url(../img/subscribe/right.webp) no-repeat; }

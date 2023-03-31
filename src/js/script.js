@@ -1,3 +1,9 @@
+const burgerBtn = document.querySelector('.humburger-item');
+const nav = document.querySelector('.navigation');
+burgerBtn.addEventListener('click', function () {
+  nav.classList.toggle('active');
+});
+
 $('.owl-carousel').owlCarousel({
   animateOut: 'fadeOut',
   loop: true,

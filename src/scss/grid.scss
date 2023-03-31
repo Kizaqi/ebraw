@@ -13,7 +13,11 @@
       flex-direction: column;
     }
   }
+  .products {
+    padding: 50px 0;
+  }
   .customer {
+    padding: 50px 0;
     .navs {
       display: none;
     }
@@ -26,6 +30,16 @@
       flex-direction: column;
       .form {
         margin: 20px 0;
+      }
+    }
+  }
+  .main {
+    .active {
+      flex-direction: column;
+      width: 100%;
+
+      li {
+        margin: 20px;
       }
     }
   }
@@ -42,6 +56,15 @@
         img {
           width: unset;
         }
+      }
+    }
+  }
+  .subscribe {
+    .text {
+      flex-wrap: wrap;
+
+      .right {
+        margin-top: 10px;
       }
     }
   }
