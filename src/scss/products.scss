@@ -36,6 +36,9 @@
     .item {
       background: white;
       position: relative;
+      img {
+        width: 100%;
+      }
       .link {
         display: flex;
         flex-direction: column;

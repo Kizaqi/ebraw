@@ -118,7 +118,7 @@ h6 {
 }
 
 .header {
-  padding: 15px;
+  padding: 15px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
@@ -388,7 +388,7 @@ h6 {
 }
 
 .fashion {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .fashion .text {
@@ -408,18 +408,18 @@ h6 {
 
 .fashion .item-left {
   background: url(../img/fashion/left-img.png) no-repeat;
-  background-size: contain;
-  background-position: left bottom;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 570px;
+  height: 500px;
 }
 
 .fashion .item-right {
   background: url(../img/fashion/right-img.png) no-repeat;
-  background-size: contain;
-  background-position: left bottom;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 570px;
+  height: 500px;
 }
 
 .products {
@@ -470,6 +470,10 @@ h6 {
 .products__main .item {
   background: white;
   position: relative;
+}
+
+.products__main .item img {
+  width: 100%;
 }
 
 .products__main .item .link {
@@ -885,6 +889,7 @@ section .text-box {
 section .text-box.left {
   background: url(../img/subscribe/left.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 section .text-box.left p {
@@ -903,6 +908,7 @@ section .text-box.left p span {
 section .text-box.right {
   background: url(../img/subscribe/right.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 section .text-box.right p {
@@ -923,9 +929,47 @@ section .text-box h3 {
   line-height: 43px;
 }
 
-@media (max-width: 576px) {
-  .header .burger-menu_nav {
-    max-width: unset;
+@media (max-width: 991px) {
+  .discount .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .customer .navs {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__top .form {
+    margin: 20px 0;
+  }
+
+  .products .content {
+    max-width: 320px;
+  }
+
+  .products .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .products__main .item {
+    text-align: center;
+  }
+
+  .products__main .item img {
+    width: unset;
   }
 }
 

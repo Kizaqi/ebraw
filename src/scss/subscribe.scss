@@ -6,6 +6,7 @@ section {
     &.left {
       background: url(../img/subscribe/left.jpg) no-repeat;
       background-size: cover;
+      background-position: center;
 
       p {
         padding-top: 15%;
@@ -22,6 +23,7 @@ section {
     &.right {
       background: url(../img/subscribe/right.jpg) no-repeat;
       background-size: cover;
+      background-position: center;
       p {
         color: white;
       }

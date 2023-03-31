@@ -1,5 +1,5 @@
 .fashion {
-  padding: 100px 0;
+  padding: 50px 0;
   .text {
     padding-right: 20px;
     h4 {
@@ -14,16 +14,16 @@
   }
   .item-left {
     background: url(../img/fashion/left-img.png) no-repeat;
-    background-size: contain;
-    background-position: left bottom;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 570px;
+    height: 500px;
   }
   .item-right {
     background: url(../img/fashion/right-img.png) no-repeat;
-    background-size: contain;
-    background-position: left bottom;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 570px;
+    height: 500px;
   }
 }
