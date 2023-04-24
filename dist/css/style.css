@@ -448,6 +448,7 @@ h6 {
 .products {
   padding: 100px 0;
   background: #f3f3f3;
+  overflow: hidden;
 }
 
 .products .content {
@@ -1018,14 +1019,6 @@ h6 {
             justify-content: center;
   }
 
-  .products__main .item {
-    text-align: center;
-  }
-
-  .products__main .item img {
-    width: unset;
-  }
-
   .subscribe .text {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1033,6 +1026,20 @@ h6 {
 
   .subscribe .text .right {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inspirations .item h1 {
+    font-size: 28px;
+  }
+
+  .inspirations .item .container {
+    padding: 0 20px;
+  }
+
+  .inspirations .navs {
+    display: none;
   }
 }
 

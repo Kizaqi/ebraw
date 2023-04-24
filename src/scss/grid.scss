@@ -50,14 +50,6 @@
     .row {
       justify-content: center;
     }
-    &__main {
-      .item {
-        text-align: center;
-        img {
-          width: unset;
-        }
-      }
-    }
   }
   .subscribe {
     .text {
@@ -71,6 +63,19 @@
 }
 
 @media (max-width: 576px) {
+  .inspirations {
+    .item {
+      h1 {
+        font-size: 28px;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+    .navs {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 320px) {
