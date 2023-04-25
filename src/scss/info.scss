@@ -4,6 +4,7 @@
   .item {
     padding: 10px;
     border: 1px solid #cccccc;
+    transition: 0.5s ease all;
 
     .title {
       padding-left: 14px;
@@ -26,14 +27,17 @@
       border-radius: 50%;
       color: #666666;
       background: #e5e5e5;
+      transition: 0.5s ease all;
     }
     &:hover {
       cursor: pointer;
       transition: 0.5sec ease all;
       border: 1px solid $color-bg;
+
       i {
         background: $color-bg;
         color: #fff;
+        transition: 0.5s ease all;
       }
       h4 {
         color: $color-first;

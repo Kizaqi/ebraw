@@ -365,6 +365,9 @@ h6 {
 .info .item {
   padding: 10px;
   border: 1px solid #cccccc;
+  -webkit-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .info .item .title {
@@ -391,6 +394,9 @@ h6 {
   border-radius: 50%;
   color: #666666;
   background: #e5e5e5;
+  -webkit-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .info .item:hover {
@@ -404,6 +410,9 @@ h6 {
 .info .item:hover i {
   background: #023047;
   color: #fff;
+  -webkit-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .info .item:hover h4 {
