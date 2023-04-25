@@ -3,6 +3,11 @@ const nav = document.querySelector('.navigation');
 burgerBtn.addEventListener('click', function () {
   nav.classList.toggle('active');
 });
+$(document).ready(function () {
+  $('#dog-names').select2({
+    minimumResultsForSearch: Infinity,
+  });
+});
 
 $('.owl-carousel').owlCarousel({
   animateOut: 'fadeOut',

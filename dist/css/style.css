@@ -140,6 +140,14 @@ h6 {
   padding: 15px;
 }
 
+.header__top .form span {
+  border: 0;
+}
+
+.header__top .form span input {
+  display: none;
+}
+
 .header__top .form button {
   color: #fff;
   background: #023047;
